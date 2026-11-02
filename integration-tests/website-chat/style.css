@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+  }
+
+  .chat-container {
+    width: 360px;
+    max-width: 95%;
+    height: 520px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .chat-header {
+    background: #172554;
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chat-header h3,
+  .chat-header p {
+    margin: 0;
+  }
+
+  .chat-header p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #cbd5e1;
+  }
+
+  .online {
+    color: #86efac;
+    font-size: 12px;
+  }
+
+  .name-section {
+    padding: 25px;
+    margin: auto 0;
+  }
+
+  .name-section p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+  }
+
+  button {
+    border: none;
+    background: #172554;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  .name-section button {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .chat-section {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .message {
+    max-width: 85%;
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .received {
+    background: #f1f5f9;
+    align-self: flex-start;
+  }
+
+  .sent {
+    background: #dcfce7;
+    align-self: flex-end;
+  }
+
+  .message-form {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #eee;
+  }
+
+  .message-form input {
+    flex: 1;
+    min-width: 0;
+  }

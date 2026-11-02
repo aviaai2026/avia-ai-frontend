@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVIA Website Chat Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div>
+        <h3>Real Estate Support</h3>
+        <p>Website Chat Test</p>
+      </div>
+      <span class="online">● Online</span>
+    </header>
+
+    <div id="name-section" class="name-section">
+      <h3>Welcome!</h3>
+      <p>Enter your name to start a conversation.</p>
+      <input id="customer-name" type="text" placeholder="Your name">
+      <button id="start-chat">Start Chat</button>
+    </div>
+
+    <div id="chat-section" class="chat-section hidden">
+      <div id="messages" class="messages">
+        <div class="message received">
+          Hello! How can we help you today?
+        </div>
+      </div>
+
+      <form id="message-form" class="message-form">
+        <input
+          id="message-input"
+          type="text"
+          placeholder="Type your message..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
